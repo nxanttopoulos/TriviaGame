@@ -43,7 +43,15 @@
 
 	margin:300px auto;
 	float:center;
-	margin-left:700px;
+	width:500px;
+	height:200px;
+	font-size:80px;
+
+} #reset {
+
+	margin:300px auto;
+	margin-top:0px;
+	float:center;
 	width:500px;
 	height:200px;
 	font-size:80px;
@@ -52,6 +60,14 @@
 
 	color:black;
 	font-size:60px;
+
+} #score {
+
+	margin:20px auto;
+	float:bottom;
+	width:250px;
+	height:50px;
+	font-size:30px;
 
 } body {
 

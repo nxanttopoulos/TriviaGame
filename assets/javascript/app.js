@@ -16,16 +16,16 @@ function getScore(){
 
 function outOfTime(){
   
-  $("#questions").html("<h2 class='results'>Time is up!<br><br>Your score is "+ getScore() +"/"+ answrList+"<br><br></h2>");
+  $("#questions").html("<h2 id='results'>Time is up!<br><br>Your score is "+ getScore() +"/"+ answrList+"<br><br></h2>");
   $("#timeRemaining").remove();
-  $("#questions").append("<button onclick='reset()'>Play Again!</button>");
+  $("#questions").append("<button id='reset' onclick='reset()'>Play Again!</button>");
 }
 
 function returnScore(){
 
-  $("#questions").html("<h2 class=results>You finished!<br><br>Your score is "+ getScore() +"/"+ answrList+"</h2>");
+  $("#questions").html("<h2 id='results'>You finished!<br><br>Your score is "+ getScore() +"/"+ answrList+"</h2>");
   $("#timeRemaining").remove();
-  $("#questions").append("<button onclick='reset()'>Play Again!</button>");
+  $("#questions").append("<button id='reset' onclick='reset()'>Play Again!</button>");
 }
 
 function reset() {
