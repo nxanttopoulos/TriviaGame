@@ -1,0 +1,62 @@
+#gameBox {
+
+	float:top;
+	text-align:center;
+	font-weight: bold;
+	width: 750px;
+	height: 820px;
+	background-color: #F0EEE2;
+	padding: 100px;
+	padding-top:10px;
+	margin-left:auto;
+	margin-right:auto;
+
+} #mainHeader {
+
+	padding-top:0px;
+	padding-bottom:25px;
+	font-size:55px;
+	margin:20px auto;
+	font-family: "Arial Black","Arial Bold",Gadget,sans-serif;
+
+} #questions {
+
+	margin: 20px auto;
+	padding-top:5px;
+
+}.textcolor1 {
+
+	color:blue;	
+
+} .textcolor2 {
+
+	color:black;
+	font-size:17.5px;
+
+} #timeRemaining {
+
+	margin: 20px auto;
+	font-size:30px;
+	padding-bottom:0px;
+
+} #startButton {
+
+	margin:300px auto;
+	float:center;
+	margin-left:700px;
+	width:500px;
+	height:200px;
+	font-size:80px;
+
+} #results { 
+
+	color:black;
+	font-size:60px;
+
+} body {
+
+	background-image: url("../images/shapes.png");
+
+}
+
+

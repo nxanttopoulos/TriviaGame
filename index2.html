@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>TriviaGame!</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <script type="text/javascript" src ="assets/javascript/app.js"></script>
+</head>
+<body>
+  <div id="gameBox">
+	<h1 id="mainHeader" class ="textcolor1">Totally Trivia Game!</h1>
+	<div id="timeRemaining" class ="textcolor2"></div>
+    <div id="questions">
+    <ul class="textcolor2">
+      <li>
+        <h3>In what place was Christmas once illegal?</h3>
+        <input type="radio" name="question0" value="A">England<br><br>
+        <input type="radio" name="question0" value="B">France<br><br>
+        <input type="radio" name="question0" value="C">Brazil<br><br>
+        <input type="radio" name="question0" value="D">Russia<br>
+      </li>
+      <li>
+        <h3>In what key do most car-horns honk?</h3>
+        <input type="radio" name="question1" value="A">C<br><br>
+        <input type="radio" name="question1" value="B">E<br><br>
+        <input type="radio" name="question1" value="C">F<br><br>
+        <input type="radio" name="question1" value="D">G<br>
+      </li>
+      <li>
+        <h3>How much does Earth weigh?</h3>
+        <input type="radio" name="question2" value="A">5 billion pounds!<br><br>
+        <input type="radio" name="question2" value="C">10,000,000,000,000,000,000,000,000 tons<br><br>
+        <input type="radio" name="question2" value="B">6,588,000,000,000,000,000,000,000,000 tons<br><br>
+        <input type="radio" name="question2" value="D">26,877,000,000,000,000,000,000,000,000,000,000,000,000 tons<br>
+      </li>
+  </ul>
+  <br>
+  <button onclick="returnScore()">Get Score</button>
+  </div>
+</body>
+</html>
