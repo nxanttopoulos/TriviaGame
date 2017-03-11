@@ -46,7 +46,6 @@ function startTimer(duration, display) {
         display.text("Time Remaining: "+ minutes + ":" + seconds);
 
         if (--timer < 0) {
-            return;
             outOfTime();
         }
     }, 1000);
