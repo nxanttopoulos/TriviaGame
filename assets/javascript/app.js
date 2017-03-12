@@ -1,5 +1,5 @@
 var answers = ["A","C","B"], 
-    answrList = answers.length;
+answrList = answers.length;
 
 function getCheckedValue( radioButton ){
     var radioBtn = document.getElementsByName( radioButton );
@@ -9,21 +9,29 @@ function getCheckedValue( radioButton ){
 
 function getScore(){
   var score = 0;
-  for (var i=0; i<answrList; i++)
+  var incorrect = 0;
+  var unanswered =0;
+  var submissions =[];
+  for (var i=0; i<answrList; i++) {
     if(getCheckedValue("question"+i)===answers[i]) score += 1;
-  return score;
+    else if (getCheckedValue("question"+i)===undefined) unanswered += 1;
+    else incorrect += 1;
+  }
+  submissions = {correct:score, wrong:incorrect, null:unanswered};
+  return submissions;
 }
 
 function outOfTime(){
   
-  $("#questions").html("<h2 id='results'>Time is up!<br><br>Your score is "+ getScore() +"/"+ answrList+"<br><br></h2>");
+  $("#questions").html("<h2 id='results'>Time is up!<br><br>Correct Answers: "+getScore().correct+"<br><br>Incorrect Answers: "+getScore().wrong+"<br><br>Unanswered: "+getScore().null+"</h2>");
   $("#timeRemaining").remove();
   $("#questions").append("<button id='reset' onclick='reset()'>Play Again!</button>");
 }
 
 function returnScore(){
 
-  $("#questions").html("<h2 id='results'>You finished!<br><br>Your score is "+ getScore() +"/"+ answrList+"</h2>");
+
+  $("#questions").html("<h2 id='results'>All Done!<br><br>Correct Answers: "+getScore().correct+"<br><br>Incorrect Answers: "+getScore().wrong+"<br><br>Unanswered: "+getScore().null+"</h2>");
   $("#timeRemaining").remove();
   $("#questions").append("<button id='reset' onclick='reset()'>Play Again!</button>");
 }
