@@ -4,7 +4,7 @@
 	text-align:center;
 	font-weight: bold;
 	width: 750px;
-	height: 820px;
+	height: 1200px;
 	background-color: #F0EEE2;
 	padding: 100px;
 	padding-top:10px;
@@ -65,7 +65,7 @@
 } #results { 
 
 	color:black;
-	font-size:60px;
+	font-size:45px;
 
 } #score {
 

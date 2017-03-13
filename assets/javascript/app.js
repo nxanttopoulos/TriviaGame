@@ -1,4 +1,4 @@
-var answers = ["A","C","B"], 
+var answers = ["A","C","B","B","A"], 
 answrList = answers.length;
 
 function getCheckedValue( radioButton ){
@@ -21,19 +21,14 @@ function getScore(){
   return submissions;
 }
 
-function outOfTime(){
-  
-  $("#questions").html("<h2 id='results'>Time is up!<br><br>Correct Answers: "+getScore().correct+"<br><br>Incorrect Answers: "+getScore().wrong+"<br><br>Unanswered: "+getScore().null+"</h2>");
-  $("#timeRemaining").remove();
-  $("#questions").append("<button id='reset' onclick='reset()'>Play Again!</button>");
-}
-
 function returnScore(){
 
 
   $("#questions").html("<h2 id='results'>All Done!<br><br>Correct Answers: "+getScore().correct+"<br><br>Incorrect Answers: "+getScore().wrong+"<br><br>Unanswered: "+getScore().null+"</h2>");
   $("#timeRemaining").remove();
   $("#questions").append("<button id='reset' onclick='reset()'>Play Again!</button>");
+  $(window).scrollTop(0);
+  
 }
 
 function reset() {
@@ -53,8 +48,8 @@ function startTimer(duration, display) {
 
         display.text("Time Remaining: "+ minutes + ":" + seconds);
 
-        if (--timer < 0) {
-            outOfTime();
+        if (--timer == 0) {
+            returnScore();
         }
     }, 1000);
 }
