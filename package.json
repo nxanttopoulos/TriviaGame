@@ -1,0 +1,24 @@
+{
+  "name": "trivia-game",
+  "version": "1.0.0",
+  "description": " It is as it sounds",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nxanttopoulos/TriviaGame.git"
+  },
+  "author": "Nicholas Xanttopoulos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nxanttopoulos/TriviaGame/issues"
+  },
+  "homepage": "https://github.com/nxanttopoulos/TriviaGame#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
+}
